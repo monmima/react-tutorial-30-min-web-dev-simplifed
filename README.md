@@ -1,6 +1,9 @@
 # react-tutorial-30-min-web-dev-simplifed
 YouTube-based Tutorial - Learn React In 30 Minutes by Web Dev Simplified
 
+- [Link to Web Dev Simplified Github repository's](https://github.com/WebDevSimplified/Learn-React-In-30-Minutes)
+- [Link to Web Dev Simplified YouTube video's](https://www.youtube.com/watch?v=hQAHSlTtcmY)
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
