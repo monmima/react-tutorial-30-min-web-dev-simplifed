@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import TodoList from "./TodoList";
-// import logo from './logo.svg';
-// import './App.css';
-import uuidv4 from "uuid/v4";
+
+// https://github.com/uuidjs/uuid#deep-requires-now-deprecated
+// import uuidv4 from "uuid/v4";
+import { v4 as uuidv4 } from 'uuid';
 
 const LOCAL_STORAGE_KEY = "todoApp.todos";
 
@@ -31,7 +32,7 @@ function App() {
     if (name === "") return
     console.log(name);
     setTodos(prevTodos => {
-      return [...prevTodos, { id: uuidv4, name: name, complete: false }]
+      return [...prevTodos, { id: uuidv4(), name: name, complete: false }]
     });
     todoNameRef.current.value = null;
   }
